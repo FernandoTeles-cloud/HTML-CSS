@@ -4,6 +4,46 @@
 
 /*
 device breakpoints
-phones 600px
-
+ 600px
+Celular 600 ate 768
+Tablet: 768 ate 992
+Desktop: 992 ate 1200
+Grande telas: acima 1200
 */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url(../imagens/back-tablet.jpg) no-repeat  bottom center;
+        background-size: cover;
+    }
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#pc { display: none;}
+    img#print { display: none;}
+    img#tv { display: none;}   
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url(../imagens/back-pc.jpg) no-repeat center center;
+        background-size: cover;
+        
+    }
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: block;}
+    img#print { display: none;}
+    img#tv { display: none;}   
+    
+}
+@media screen and (min-width: 1200px)  {
+    body {
+        background: url(../imagens/back-tv.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#print { display: none;}
+    img#tv { display: block;}   
+    
+}
